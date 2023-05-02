@@ -21,14 +21,12 @@ class ManegementController extends Controller
         return view('content', ['inputs' => $inputs]);
     }
     
-    public function create(ContactRequest $request)
+    public function create(Request $request)
     {
         $form = $request->all();
         Contact::create($form);
-        return redirect('/',['form' => $form]);
+        return view('thanks');
     }
-
-
 
 
     public function find(Request $request)

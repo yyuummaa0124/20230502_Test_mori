@@ -141,7 +141,7 @@ input,textarea{
             <div class="contact-email">
                 <p class="contact-item">メールアドレス</p>
                 <p class="contact-body">
-                        {{ $inputs['email'] }}<input type="hidden" name="build" class="form-email" value=" {{ $inputs['email'] }} "/>
+                        {{ $inputs['email'] }}<input type="hidden" name="email" class="form-email" value=" {{ $inputs['email'] }} "/>
                 </p>
             </div>
 
@@ -173,7 +173,7 @@ input,textarea{
             <div class="contact-inquiry">
                 <p class="contact-item">ご意見</p>
                 <p class="contact-body">
-                    {{ $inputs['opinion'] }}<textarea type="hidden" name="opinion" class="form-textarea" value=" {{ $inputs['opinion'] }} "></textarea>
+                    {{ $inputs['opinion'] }}<input name="opinion" class="form-textarea" value="{{ $inputs['opinion']}}">
                 </p>
             </div>
 
